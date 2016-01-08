@@ -1,3 +1,5 @@
+Introduction
+
 This script lets you to Hide, Unhide your pings.
 
 It uses netsh.exe to create and modify Advance Firewall Rules.
