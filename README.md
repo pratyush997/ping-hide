@@ -5,23 +5,9 @@ All it does is use to netsh.exe to create and modify Advance Firewall Rules.
 PS- Compatible with Windows Operating System 7 and later.
 Tested on Windows 8.1 x64 Pro.
 
-Instruction : -
+Instructions : -
 
-1 . Download the "ping-hide.bat"
 
-2 . Create a shortcut and place it wherever your feel convinient.
-
-3 . R-Click the Shortcut, open Properties.
-vv
-4. Under "Shortcut" Tab, Click on "Advanced".
-
-5. Tick the "Run as Admin".
-
-6. Apply changes and save the file.
-
-7.  ( ͡° ͜ʖ ͡°)
-
-8. Profit ??? 
 
 
 
