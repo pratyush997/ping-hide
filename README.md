@@ -14,16 +14,14 @@ Instruction : -
 3 . R-Click the Shortcut, open Properties.
 
 4. Under "Shortcut" Tab, Click on "Advanced".
-5. 
+
 5. Tick the "Run as Admin".
-6. 
+
 6. Apply changes and save the file.
-7. 
+
 7.  ( ͡° ͜ʖ ͡°)
-8.  
+
 8. Profit ??? 
-9. 
-9. 
 
 
 
