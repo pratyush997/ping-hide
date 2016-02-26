@@ -45,6 +45,7 @@ namespace PingHide {
 	private: System::Windows::Forms::Label^  label1;
 	private: System::Windows::Forms::Button^  button4;
 	private: System::Windows::Forms::Label^  label2;
+
 			 /// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -70,7 +71,7 @@ namespace PingHide {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(18, 79);
+			this->button1->Location = System::Drawing::Point(18, 84);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(75, 23);
 			this->button1->TabIndex = 0;
@@ -80,7 +81,7 @@ namespace PingHide {
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(18, 39);
+			this->button2->Location = System::Drawing::Point(18, 44);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(75, 23);
 			this->button2->TabIndex = 1;
@@ -90,7 +91,7 @@ namespace PingHide {
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(138, 39);
+			this->button3->Location = System::Drawing::Point(138, 44);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(75, 23);
 			this->button3->TabIndex = 2;
@@ -101,9 +102,10 @@ namespace PingHide {
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(100, 151);
+			this->pictureBox1->Location = System::Drawing::Point(99, 155);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(32, 32);
+			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox1->TabIndex = 11;
 			this->pictureBox1->TabStop = false;
 			this->pictureBox1->Click += gcnew System::EventHandler(this, &MyForm::pictureBox1_Click);
@@ -112,15 +114,14 @@ namespace PingHide {
 			// 
 			this->label1->AutoSize = true;
 			this->label1->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->label1->Location = System::Drawing::Point(97, 119);
+			this->label1->Location = System::Drawing::Point(94, 127);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(37, 13);
+			this->label1->Size = System::Drawing::Size(0, 13);
 			this->label1->TabIndex = 13;
-			this->label1->Text = L"Result";
 			// 
 			// button4
 			// 
-			this->button4->Location = System::Drawing::Point(138, 79);
+			this->button4->Location = System::Drawing::Point(138, 84);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(75, 23);
 			this->button4->TabIndex = 14;
@@ -158,6 +159,7 @@ namespace PingHide {
 			this->ResumeLayout(false);
 			this->PerformLayout();
 			MessageBox::Show("Run The Program with Admin Rights.");
+
 		}
 #pragma endregion
 
@@ -195,7 +197,7 @@ private: System::Void button3_Click(System::Object^  sender, System::EventArgs^ 
 	process->StartInfo->FileName = "cmd.exe";
 	process->StartInfo->Arguments = "/C  netsh advfirewall firewall add rule name=\"ping\" protocol=icmpv4:any,any dir=out action=block";
 	process->Start();
-	this->label1->Text = "Rule Created!";
+	this->label1->Text = "Created!";
 }
 private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
 
@@ -208,5 +210,6 @@ private: System::Void button4_Click(System::Object^  sender, System::EventArgs^ 
 	this->label1->Text = "Checked";
 
 }
+
 };
 }
