@@ -1,15 +1,17 @@
-﻿Build started 2/26/2016 2:05:42 PM.
-     1>Project "C:\Users\Derp\Documents\Visual Studio 2013\Projects\Ping Hide\Ping Hide\Ping Hide.vcxproj" on node 2 (Build target(s)).
+﻿Build started 2/26/2016 6:12:55 PM.
+     1>Project "C:\Users\Derp\Documents\Visual Studio 2013\Projects\Ping Hide\Ping Hide\Ping Hide.vcxproj" on node 2 (Rebuild target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (Ping Hide.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AIC:\Windows\Microsoft.NET\Framework\v2.0.50727\ /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /Zi /clr /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /TP /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Data.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll /FUC:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /analyze- /errorReport:prompt /d1clr:nostdlib MyForm.cpp
          MyForm.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Release\Resource.res" ..\..\Project1\Project1\Resource.rc 
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Derp\Documents\Visual Studio 2013\Projects\Ping Hide\Release\PingHide.exe" /INCREMENTAL:NO /NOLOGO /ASSEMBLYRESOURCE:Release\PingHide.MyForm.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Derp\Documents\Visual Studio 2013\Projects\Ping Hide\Release\PingHide.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"Main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /SAFESEH Release\Resource.res
          Release\MyForm.obj
          Ping Hide.vcxproj -> C:\Users\Derp\Documents\Visual Studio 2013\Projects\Ping Hide\Release\PingHide.exe
-     1>Done Building Project "C:\Users\Derp\Documents\Visual Studio 2013\Projects\Ping Hide\Ping Hide\Ping Hide.vcxproj" (Build target(s)).
+     1>Done Building Project "C:\Users\Derp\Documents\Visual Studio 2013\Projects\Ping Hide\Ping Hide\Ping Hide.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.71
+Time Elapsed 00:00:02.54

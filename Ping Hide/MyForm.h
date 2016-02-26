@@ -91,7 +91,7 @@ namespace PingHide {
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(138, 44);
+			this->button3->Location = System::Drawing::Point(135, 44);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(75, 23);
 			this->button3->TabIndex = 2;
@@ -121,7 +121,7 @@ namespace PingHide {
 			// 
 			// button4
 			// 
-			this->button4->Location = System::Drawing::Point(138, 84);
+			this->button4->Location = System::Drawing::Point(135, 84);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(75, 23);
 			this->button4->TabIndex = 14;
@@ -150,6 +150,8 @@ namespace PingHide {
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
+			MessageBox::Show("Run The Program with Admin Rights.\n\t Ignore if done.");
+			MessageBox::Show("Click \"Create Rule\" on the First Launch.");
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->MaximizeBox = false;
 			this->Name = L"MyForm";
@@ -158,7 +160,6 @@ namespace PingHide {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
-			MessageBox::Show("Run The Program with Admin Rights.");
 
 		}
 #pragma endregion
