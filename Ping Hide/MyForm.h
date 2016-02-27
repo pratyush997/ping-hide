@@ -46,6 +46,7 @@ namespace PingHide {
 	private: System::Windows::Forms::Button^  button4;
 	private: System::Windows::Forms::Label^  label2;
 
+
 			 /// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -56,6 +57,11 @@ namespace PingHide {
 		/// Required method for Designer support - do not modify
 		/// the contents of this method with the code editor.
 		/// </summary>
+
+		/// <summary>
+		/// The main entry point for the application.
+		/// </summary>
+		
 		void InitializeComponent(void)
 		{
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
@@ -71,7 +77,7 @@ namespace PingHide {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(18, 84);
+			this->button1->Location = System::Drawing::Point(18, 85);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(75, 23);
 			this->button1->TabIndex = 0;
@@ -81,7 +87,7 @@ namespace PingHide {
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(18, 44);
+			this->button2->Location = System::Drawing::Point(18, 42);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(75, 23);
 			this->button2->TabIndex = 1;
@@ -91,7 +97,7 @@ namespace PingHide {
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(135, 44);
+			this->button3->Location = System::Drawing::Point(135, 42);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(75, 23);
 			this->button3->TabIndex = 2;
@@ -114,14 +120,16 @@ namespace PingHide {
 			// 
 			this->label1->AutoSize = true;
 			this->label1->FlatStyle = System::Windows::Forms::FlatStyle::System;
-			this->label1->Location = System::Drawing::Point(94, 127);
+			this->label1->Location = System::Drawing::Point(96, 126);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(0, 13);
+			this->label1->Size = System::Drawing::Size(37, 13);
 			this->label1->TabIndex = 13;
+			this->label1->Text = L"Result";
+			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// button4
 			// 
-			this->button4->Location = System::Drawing::Point(135, 84);
+			this->button4->Location = System::Drawing::Point(135, 85);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(75, 23);
 			this->button4->TabIndex = 14;
@@ -150,8 +158,6 @@ namespace PingHide {
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
-			MessageBox::Show("Run The Program with Admin Rights.\n\t Ignore if done.");
-			MessageBox::Show("Click \"Create Rule\" on the First Launch.");
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->MaximizeBox = false;
 			this->Name = L"MyForm";
@@ -160,6 +166,8 @@ namespace PingHide {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
+
+			MessageBox::Show("Run The Program with Admin Rights.\n\t Ignore if done.\nClick \"Create Rule\" on the First Launch.");
 
 		}
 #pragma endregion
