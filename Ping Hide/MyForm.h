@@ -158,6 +158,7 @@ namespace PingHide {
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
+			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->MaximizeBox = false;
 			this->Name = L"MyForm";
@@ -166,8 +167,6 @@ namespace PingHide {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
-
-			MessageBox::Show("Run The Program with Admin Rights.\n\t Ignore if done.\nClick \"Create Rule\" on the First Launch.");
 
 		}
 #pragma endregion
