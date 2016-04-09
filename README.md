@@ -3,9 +3,7 @@ No more getting kicked out of the server due to high pings.
 
 ## Ping Hide
 This program lets you Hide or Unhide your pings.
-
-## Instructions
-Run The Program with Admin Rights.
+It uses Advanced FIrewall rules to function.
 
 ## Dependancy
 
