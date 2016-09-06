@@ -1,4 +1,4 @@
-# For Indian Multiplayer Gamers :)
+# For Multiplayer Gamers :)
 No more getting kicked out of the server due to high pings.  
 
 ## Ping Hide
